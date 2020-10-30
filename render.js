@@ -110,8 +110,8 @@ canvas.addEventListener("wheel", (evt) => {
 })
 const drawGrid = ()=>{
     ctx.fillStyle = '#eeeeee';
-    let startX = Math.abs((camera[0] / scale) % 1);
-    let startY = Math.abs((camera[1] / scale) % 1);
+    let startX = - ((camera[0] / scale) % 1);
+    let startY = - ((camera[1] / scale) % 1);
     for (let position = startX * scale; position < canvas.width; position += scale) {
         ctx.fillRect(position, 0, 1, canvas.height);
     }
