@@ -181,6 +181,24 @@ const drawBlocks = ()=>{
                     ctx.lineTo(c[0] - scale / 4, c[1] + scale / 4);
                     ctx.fill();
                 }
+                if(element.type == "logical-in"){
+                    ctx.fillStyle = 'rgb(255, 255, 255)';
+                    ctx.beginPath();
+                    ctx.arc(c[0], c[1], scale / 2 + 1, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.fillStyle = 'rgb(175, 175, 175)';
+                    ctx.beginPath();
+                    ctx.arc(c[0], c[1], scale / 2, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.fillStyle = 'rgb(100, 100, 100)';
+                    ctx.beginPath();
+                    ctx.lineTo(c[0] + scale / 4, c[1] + scale / 4);
+                    ctx.lineTo(c[0] + scale / 4, c[1] - scale / 4);
+                    ctx.lineTo(c[0] - scale / 4, c[1] - scale / 4);
+                    ctx.lineTo(c[0] - scale / 8, c[1]);
+                    ctx.lineTo(c[0] - scale / 4, c[1] + scale / 4);
+                    ctx.fill();
+                }
             });
         }
     }
