@@ -17,7 +17,7 @@ nav > buttons{
 nav > buttons > btn{
     transition: 0.25s;
     font-size: 14pt;
-    padding: 3px 8px;
+    padding: 4px 8px;
     cursor: pointer;
 }
 nav > buttons > btn:hover{
