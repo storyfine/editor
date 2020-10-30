@@ -84,14 +84,14 @@ const types = {
                 }
             },
             {
-                type: "logical-out",
+                type: "main-out",
                 position: {
                     x: 8,
                     y: 2
                 }
             },
             {
-                type: "logical-out",
+                type: "main-out",
                 position: {
                     x: 8,
                     y: 4
