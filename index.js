@@ -199,7 +199,7 @@ const getScaledMousePos = () => {
     else return null;
 }
 const getClickedObjectId = (x, y) => {
-    for (const [key, value] of Object.entries(episode)) {
+    for (const [key, value] of Object.entries(episode).reverse()) {
         if(x >= value.position.x && x <= value.position.x + types[value.type].width && y >= value.position.y && y <= value.position.y + types[value.type].height) return key;
     }
     return null;
