@@ -24,6 +24,8 @@ const updateDebug = (data)=>{
 setInterval(()=>{
     let obj = {};
     obj["FPS"] = fps;
+    obj["Camera"] = "[" + Math.round(camera[0] * 100) / 100 + ", " + Math.round(camera[1] * 100) / 100 + "]";
+    obj["Scale"] = scale;
     let mousePos = getMousePos();
     if(mousePos != null) obj["Mouse"] = "[" + Math.round(mousePos[0] * 100) / 100 + ", " + Math.round(mousePos[1]) / 100 + "]";
     let scaledMousePos = getScaledMousePos();
