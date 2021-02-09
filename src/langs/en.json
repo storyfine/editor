@@ -1,0 +1,56 @@
+{
+    "ui": {
+        "sidebar": {
+            "modulesel": "Selected module",
+            "moduleinfo": "Module description",
+            "moduleid": "Id",
+            "moduledescr": "Description",
+            "remove": "Remove",
+            "nothingselected": "Nothing selected"
+        }
+    },
+    "types": {
+        "entry": {
+            "name": "Entry point",
+            "description": "Start of the episode"
+        },
+        "checkpoint": {
+            "name": "Checkpoint",
+            "description": "Linear checkpoint"
+        },
+        "condition": {
+            "name": "Сondition",
+            "description": "Simple condition"
+        },
+        "choice": {
+            "name": "Player choice",
+            "description": "Gives the player a choice"
+        },
+        "searcher": {
+            "name": "Logical searcher",
+            "description": "Loads logical value from global episodes pool"
+        }
+    },
+    "nav": {
+        "buttons": {
+            "episode": "Episode",
+            "objects": "Objects",
+            "functions": "Functions",
+            "help": "Help",
+            "items": {
+                "episode": {
+                    "newep": "New episode",
+                    "open": "Open",
+                    "saveas": "Save as",
+                    "export": "Export"
+                },
+                "functions": {
+                    "debug": "Toggle debug"
+                },
+                "help": {
+                    "basic-guide": "Basic guide"
+                }
+            }
+        }
+    }
+}
