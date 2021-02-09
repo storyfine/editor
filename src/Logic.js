@@ -277,7 +277,7 @@ export default ({store}) => {
             if(isvalid(JSON.parse(saved))) window.SF.episode = JSON.parse(saved);
             else makeNewEpisode();
     }
-    catch{}
+    catch{makeNewEpisode();}
     if(localStorage.getItem("debug") == "true") window.SF.debug.enabled = true;
     return {updateCanvas};
 }
